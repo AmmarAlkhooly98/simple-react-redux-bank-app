@@ -21,7 +21,7 @@ function App() {
   const accBalance = useSelector((state) => state.bank.balance);
   const debtDue = useSelector((state) => state.bank.debt);
 
-  // the useDispatch hook returns a reference to the dispatch function from the Redux store. You may use it to dispatch actions as needed.
+  // the useDispatch hook is used to dispatch actions, we made a reference to the useDispatch hook by the constant dispatch to be used in any part of our component
   const dispatch = useDispatch();
 
   return (
